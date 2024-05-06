@@ -1,0 +1,118 @@
+
+.resident {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0.8em;
+    background-color: rgba(9 74 78 / 0.941);
+    box-shadow: 0.01em 0.10em 0.2em 0.15em rgb(1 255 251);
+    transition: tranform 140ms ease;
+    margin-bottom: 1rem;
+    &:hover {
+        transform: scale(1.02);
+         transition: transform 0.3s ease;
+    }
+}
+
+
+.resident__header {
+    width: 100%;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.resident__image {
+    padding: 0.2em 0.5em;
+    border-radius: 0.8em;    
+}
+
+.status {
+    padding: 0.6em 1em;
+    border-radius: 0 0.5em 0.5em 0;
+    position: absolute;
+    top: 10%;
+    left: 0;    
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    background-color: rgb(2 66 62);
+}
+
+.status__circle {
+    width: 1em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    font-weight: 400;
+    background-color: rgb(195 205 213);  
+    box-shadow: 0.01em 0.1em 1em rgba(185 183 183 / 0.833);
+}
+
+.Alive {
+    background-color: rgb(173 255 47);
+    box-shadow: 0.01em 0.1em 1em rgba(172 255 47 / 0.879);
+}
+
+.Dead {
+    background-color: rgb(255 0 0);
+    box-shadow: 0.01em 0.1em 1em rgba(255 0 0 / 0.833);
+}
+
+.resident__body {
+    padding: 1.5em 1.5em 2em;
+}
+
+.resident__name {
+    text-align: center;
+    font-weight: 800;
+    -webkit-text-stroke: 0.3px rgb(2 156 180);    
+    text-shadow: 0.05em 0.1em 0.5em rgb(0 0 0);
+    color: rgb(0 229 255);
+    font-size: 1.45em;
+}
+
+.resident__hr {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    border: 1px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015), rgba(0, 255, 225, 0.75), rgba(255, 255, 255, 0.017));
+}
+
+.resident__list {
+    display: grid;
+    gap: 1em;
+}
+
+.resident__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.resident__label {
+    -webkit-text-stroke: 0.3px rgb(2 156 180);    
+    text-shadow: 0.05em 0.1em 0.5em rgb(0 0 0);
+    color: rgb(0 229 255);
+    padding-left: 1em;
+    font-weight: 500;
+}
+
+.resident__value {
+    font-weight: 400;
+    -webkit-text-stroke: 0.3px rgb(0 221 255);    
+    text-shadow: 0.05em 0.1em 0.5em rgb(0 0 0);
+    color: rgb(191 249 255);
+}
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .resident {
+        max-width: 95%;
+    }
+    .status{
+        font-size: 0.8em;
+        padding-left: 1rem ;
+    }
+}

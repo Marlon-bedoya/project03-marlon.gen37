@@ -1,0 +1,35 @@
+
+
+
+
+.app {
+    color: rgb(241, 254, 247);  
+}
+
+.container__resident {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.app__error {
+    text-align: center;  
+    font-size: 2rem;
+}
+
+
+.app__title {
+    background-image: url('/public/rick-und-morty-t-shirts-logoshirt-shop.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: top; 
+    height: 50vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .app__title {
+        height: 20vh; 
+    }
+}

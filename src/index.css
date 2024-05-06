@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Protest+Riot&display=swap');
+
+html {
+    font-family: "Patua One", serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    background-color: rgba(2, 47, 57, 0.992);
+}
+
+h1, 
+h2, 
+h3,
+p,
+ul,
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
